@@ -1,7 +1,7 @@
 require 'openssl'
 require 'base64'
 
-class Signature
+class BpjsSignature
     
     def self.generate(cons_id, secretkey)
         data = "#{cons_id}&#{Time.now.to_i}"
